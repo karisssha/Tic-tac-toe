@@ -22,7 +22,7 @@ public class TicTacToe {
             }
             if(board.isBoardFull()) {
                 board.printBoard();
-                System.out.println("Emapate!");
+                System.out.println("Empate!");
                 break;
             }
         }
