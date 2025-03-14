@@ -1,13 +1,17 @@
 package com.tic_tac_toe;
 
 public class TicTacToe { 
+    private static final String purple = "\033[35m";
+    private static final String green = "\033[32m"; 
+    private static final String reset = "\u001B[0m";
     public static void main(String[] args) {
         Board board = new Board();
         Players players = new Players(board);
+
        
         while(true) {
             board.printBoard();
-            int move = players.getPlayerMove();
+            int move = players.getPlayerMove(); 
             char currentPlayer = board.getCurrentPlayer();
             board.makeMove(move);
 
@@ -16,13 +20,16 @@ public class TicTacToe {
 
            if (board.checkWinner(currentPlayer)) {
                board.printBoard();
-               System.out.println("Player " + currentPlayer + " wins! Congratulations!");
+               String color = (currentPlayer == 'X') ? green : purple;
+               System.out.println(color + "Player " + currentPlayer + " wins! Congratulations!" + reset);
+
 
                     break;
             }
             if(board.isBoardFull()) {
                 board.printBoard();
-                System.out.println("Tie!");
+                String red="\033[31m";
+                System.out.println(red+ "Tie!"+ reset);
                 break;
             }
         }
