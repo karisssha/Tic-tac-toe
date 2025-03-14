@@ -8,12 +8,16 @@ public class TicTacToe {
         while(true) {
             board.printBoard();
             int move = players.getPlayerMove();
+            char currentPlayer = board.getCurrentPlayer();
             board.makeMove(move);
 
-            if(board.checkWinner(board.getCurrentPlayer())) {
-                board.printBoard();
-                System.out.println("Jugador " + board.getCurrentPlayer() +
-                    "gana! Felicidades!!");
+             
+           
+
+           if (board.checkWinner(currentPlayer)) {
+               board.printBoard();
+               System.out.println("¡Jugador " + currentPlayer + " gana! Felicidades!");
+
                     break;
             }
             if(board.isBoardFull()) {
