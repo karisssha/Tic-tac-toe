@@ -2,22 +2,27 @@
 
 ### 1. Game specifics
 
-The game consists in putting **the same symbols** in vertical, horizontal and diagonal direction within the **board**.
-There are only two players and only 9 slots. Just the classic layout. 
-This game runs on terminal.
+The game consists in putting **the same symbols** in vertical, horizontal and diagonal direction within the **board**.  
+
+There are only two players and only 9 slots. Just the classic layout.   
+
+This game runs on terminal.  
+
 
 [image](https://github.com/user-attachments/assets/e7997462-7464-43c7-a706-e823b2471a91)
 
 ### 2. Technologies
 
-**Java** Version 21.0.6
+**Java** Version 21.0.6  
+
 **Maven** Version 3.1.0
 
 ### 3. The team
 
 As developers,
 
-**Karisha** [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karisssha)
+**Karisha** [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karisssha)  
+
 **Alba** [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/AlbaMaríaRieraVelazquez)
 
 Students from the 1st class of Full Stack + Cibersecurity of Factoria F5. 
