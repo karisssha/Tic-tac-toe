@@ -16,13 +16,13 @@ public class TicTacToe {
 
            if (board.checkWinner(currentPlayer)) {
                board.printBoard();
-               System.out.println("¡Jugador " + currentPlayer + " gana! Felicidades!");
+               System.out.println("Player " + currentPlayer + " wins! Congratulations!");
 
                     break;
             }
             if(board.isBoardFull()) {
                 board.printBoard();
-                System.out.println("Empate!");
+                System.out.println("Tie!");
                 break;
             }
         }

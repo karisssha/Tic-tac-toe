@@ -15,7 +15,7 @@ public class  Players {
 
     public int getPlayerMove() {
         while (true) {
-            System.out.printf("Juagdor %c, elige una posición (1-9): ",
+            System.out.printf("Player %c, pick a position (1-9): ",
                             board.getCurrentPlayer());
     
             try { 
@@ -23,9 +23,9 @@ public class  Players {
                 if (board.isValidMove(position)){
                     return position;
                 }
-                System.out.println("Movimiento inválido, intenta de nuevo.");
+                System.out.println("Invalid move, try again.");
             } catch(Exception e) { 
-                System.out.println("Entrada invalida, por favor ingresa un numero");
+                System.out.println("Invalid input, please enter a number");
                 scanner.nextLine();
             }
         }
