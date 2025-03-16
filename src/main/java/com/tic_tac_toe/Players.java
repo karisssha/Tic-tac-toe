@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class  Players {
     private Scanner scanner;
     private Board board;
+    private final String purple = "\033[35m";
+    private final String green = "\033[32m";
+    private final String reset = "\u001B[0m";
+  
 
     public Players(Board board) {
         this.board = board;
@@ -15,8 +19,9 @@ public class  Players {
 
     public int getPlayerMove() {
         while (true) {
-            System.out.printf("Player %c, pick a position (1-9): ",
-                            board.getCurrentPlayer());
+            String color = (board.getCurrentPlayer() == 'X') ? green : purple;
+            System.out.printf("Player "+ color + "%c" + reset + " pick a position (1-9): ", board.getCurrentPlayer());
+            board.getCurrentPlayer();
     
             try { 
                 int position = scanner.nextInt() - 1 ; 
