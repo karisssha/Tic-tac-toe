@@ -11,7 +11,7 @@ public class BoardTest {
 
     @BeforeEach
     void setUp() {
-        board = new Board(); // Crear un nuevo tablero antes de cada test
+        board = new Board(); 
     }
 
     @Test
@@ -22,7 +22,7 @@ public class BoardTest {
 
     @Test
     void testIsValidMove_InvalidPositions() {
-        board.makeMove(1); // Ocupamos la posición 1
+        board.makeMove(1); 
         assertFalse(board.isValidMove(1), "Position 1 should be invalid if occupied");
         assertTrue(board.isValidMove(0), "Positions less than 1 are not valid.");
         assertFalse(board.isValidMove(10), "Positions greater than 9 are not valid");
