@@ -11,13 +11,33 @@ This game runs on terminal.
 
 [image](https://github.com/user-attachments/assets/e7997462-7464-43c7-a706-e823b2471a91)
 
-### 2. Technologies
+### 2. The Architecture
+
+The program is structured into three main classes, each with well-defined responsibilities:
+
+1️⃣ Board – Handles the game logic:
+Initializes the board with numbers (1-9).
+Handles moves and updates the board.
+Determines if there is a winner or a tie.
+
+2️⃣ Players – Handles user input:
+Requests the position to place the checker (X or O).
+Verifies that the input is valid.
+Highlights each player's checker with colors (X in green, O in purple).
+
+3️⃣ TicTacToe (Main) – Controls the flow of the game:
+Alternates turns between players.
+Verifies if the game is over.
+Displays win or tie messages with visual effects on the terminal.
+
+
+### 3. Technologies
 
 **Java** Version 21.0.6  
 
 **Maven** Version 3.1.0
 
-### 3. The team
+### 4. The team
 
 As developers,
 
