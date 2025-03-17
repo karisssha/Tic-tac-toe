@@ -10,6 +10,8 @@ This game runs on terminal.
 
 
 [image](https://github.com/user-attachments/assets/e7997462-7464-43c7-a706-e823b2471a91)
+![image](https://github.com/user-attachments/assets/c1f80ac8-1e05-435c-8251-51f8e2efdfec)
+
 
 ### 2. The Architecture
 
