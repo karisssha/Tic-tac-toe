@@ -38,6 +38,8 @@ Displays win or tie messages with visual effects on the terminal.
 
 **Maven** Version 3.1.0
 
+**Jupiter** Version 5.7.1
+
 ### 4. The team
 
 As developers,
